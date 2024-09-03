@@ -1,0 +1,4 @@
+fastapi-cli
+fastapi
+uvicorn
+request
