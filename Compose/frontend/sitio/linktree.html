@@ -4,14 +4,22 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-pink.css">    
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">    
 <title>Links website</title>
 <script src="https://unpkg.com/feather-icons"></script>
-
 <style>
 body {
-  background: url("https://www.w3schools.com/howto/img_link_tree_template2_bg.jpg"); /* The image used for background */
+  /* background: url("https://www.w3schools.com/howto/img_link_tree_template2_bg.jpg"); /* The image used for background */
+  /* background: url("https://wallpaperboat.com/wp-content/uploads/2019/10/free-website-background-21.jpg"); /* The image used for background */
+  /* background: url("https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-7-full.jpg"); /* The image used for background */
+  background: url("https://static.vecteezy.com/system/resources/previews/000/833/525/original/grey-abstract-background-with-layers-vector.jpg"); /* The image used for background */
+  color: white; /* Cambia el color de las letras a blanco */
 }
+
+/* Agrega esta regla para cambiar el color de las letras de los enlaces a blanco */
+.links-container a {
+    color: white;
+  }
 
 .container {
   width: 100%;
@@ -25,7 +33,7 @@ body {
 .links-container {
   display: flex;
   flex-direction: column;
-  jusify-content: center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -34,7 +42,7 @@ body {
 }
 
 .w3-theme-l1:hover {
-  background-color: #f279a1 !important;
+  background-color: #554255 !important;
 }
 
 .margin-top-2 {
@@ -49,12 +57,12 @@ body {
 }
 
 .bottom span {
-  color: #ed4d82;
+  color: #4d3b4d;
 }
 
 .bottom svg {
-  stroke: #ed4d82;
-  fill: #ed4d82;
+  stroke: #23f7f7;
+  fill: #23f7f7;
 }
 
 @media (min-width: 768px) {
@@ -75,40 +83,36 @@ body {
 
       <!-- Image and name container. Change to your pictue here. -->
       <div style="text-align: center">
-        <img src="https://avatars.githubusercontent.com/u/106186354?v=4" class="w3-margin" alt="image" width="150px" height="150px" style="border-radius: 50%;">
-        <p ><span class="name w3-padding w3-pink w3-round" style="font-weight: bolder;" id="name">Hola, no funcionas</span></p>
-        <p style="font-weight: bolder;">¡Mira mis enlaces!</p>
+<!--         <img src="https://avatars.githubusercontent.com/u/129093191?s=400&u=c00269666d2960770f9b69969594c342360498eb&v=4" class="w3-margin" alt="image" width="150px" height="150px" style="border-radius: 50%;">
+ -->        <img src="https://avatars.githubusercontent.com/u/129093191?s=400&u=c00269666d2960770f9b69969594c342360498eb&v=4" class="w3-margin" alt="image" width="150px" height="150px" style="border-radius: 50%;">
+        <p><span class="name w3-padding w3-black w3-round" style="font-weight: bolder;" id="name">Hi, I'm </span></p>
+        <p style="font-weight: bolder;">This is my linktree!</p>
       </div>
 
       <!-- Links section 1. Replace the # inside of the "" with your links. -->
-      <h4 class="margin-top-2" style="text-align: center;">MIS REDES SOCIALES</h4>
+      <h4 class="margin-top-2" style="text-align: center;"></h4>
       <div class="links-container">
-        <a id="facebookLink" href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Facebook</a>
         <br>
-        <a id="instagramUser" href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Instagram</a>
-        <br>
-        <a id="xUser" href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">X</a>
-        <br>
-        <a id="githubUser" href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Github</a>
+        <a id="githubUser" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Github</a>
       </div>
 
       <!-- Links section 2. Replace the # inside of the "" with your links. -->
-      <h4 class="margin-top-2" style="text-align: center;">MI EXPERIENCIA</h4>
+      <h4 class="margin-top-2" style="text-align: center;"></h4>
       <div class="links-container">
         <a id="linkedinUser" href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">LinkedIn</a>
       </div>
 
       <!-- Links section 3. Replace the # inside of the "" with your links. -->
-      <h4 class="margin-top-2" style="text-align: center;">MI BLOG</h4>
+      <h4 class="margin-top-2" style="text-align: center;"></h4>
       <div class="links-container">
-        <a id="website" href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Amin Espinoza</a>
+        <a id="website" href="#" class="w3-button w3-round-xlarge w3-theme-l1 w3-border link" target="_blank">Andrés De La Torre</a>
       </div>
 
       <!-- Bottom section 3 -->
       <div class="bottom margin-top-2 w3-padding w3-round">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-        <span id="author" style="vertical-align: 7px;"> 2023 - Hecho por Miranda Espinoza</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> -->
+        <span id="author" style="vertical-align: 7px;"> 2024 - By myself</span>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> -->
       </div>
 
     </div>

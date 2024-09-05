@@ -1,25 +1,37 @@
-import json
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+import uvicorn
 
 app = FastAPI()
+
+# Configurar CORS
+origins = [
+    "http://localhost:8080",  # URL del frontend
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get('/getMyInfo')
 def get_my_info():
     value = {
-        "name": "Amin",
-        "lastname": "Espinoza",
+        "name": "Andrés",
+        "lastname": "De La Torre",
         "socialMedia":
-        [
-            {"facebookUser": "andresdeatorrevilla"},
-            {"instagramUser": "andresdeatorrevilla"},
-            {"xUser": "andresdeatorrevilla"},
-            {"linkedin": "/adltv"},
-            {"githubUser": "DragonBlade"}
-        ],
-        "blog": "https://aandresdelatorrevilla.com",
+            {
+                "linkedin": "in/adltv",
+                "githubUser": "DragonBlade1219"
+            }
+        ,
+        "website": "http://localhost:8080/linktree.html",
         "author": "Andrés De La Torre Villa"
     }
     return value
 
-if __name__ == '__main':
-    app.host(port=5000)
+if __name__ == '__main__':
+    uvicorn.run(app, host="0.0.0.0", port=5000)
