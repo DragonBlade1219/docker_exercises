@@ -1,0 +1,33 @@
+# Ignorar archivos de configuración de entorno
+.env
+*.env
+
+# Ignorar archivos de compilación y caché
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar archivos y directorios de desarrollo
+.vscode/
+.idea/
+*.swp
+
+# Ignorar archivos de control de versiones
+.git/
+.gitignore
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar archivos de pruebas
+tests/
+*.test
+
+# Ignorar archivos de documentación
+docs/
+*.md
+
+# Ignorar archivos de datos
+*.db
+*.sqlite3

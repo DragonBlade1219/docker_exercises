@@ -1,0 +1,28 @@
+# Ignorar archivos de configuración de entorno
+.env
+*.env
+
+# Ignorar archivos de compilación y caché
+node_modules/
+dist/
+build/
+
+# Ignorar archivos y directorios de desarrollo
+.vscode/
+.idea/
+*.swp
+
+# Ignorar archivos de control de versiones
+.git/
+.gitignore
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar archivos de pruebas
+tests/
+*.test
+
+# Ignorar archivos de documentación
+docs/
+*.md

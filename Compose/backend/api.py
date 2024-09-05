@@ -20,7 +20,7 @@ app.add_middleware(
 @app.get('/getMyInfo')
 def get_my_info():
     value = {
-        "name": "Andrés",
+        "name": "Vergil",
         "lastname": "De La Torre",
         "socialMedia":
             {
@@ -29,7 +29,7 @@ def get_my_info():
             }
         ,
         "website": "http://localhost:8080/linktree.html",
-        "author": "Andrés De La Torre Villa"
+        "author": "Vergil"
     }
     return value
 
